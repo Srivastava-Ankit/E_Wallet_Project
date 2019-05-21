@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="@drawable/blue"
+        tools:context=".signIn.SignIn">
+
+        <TextView
+            android:text="USER NAME* (phone no)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:id="@+id/signInUserName"
+            android:layout_below="@+id/signInWelcom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backward_button_selector"
+            android:id="@+id/signInBackwardButton"
+            android:layout_height="25dp"
+            android:layout_width="12dp" />
+
+        <TextView
+            android:text="Welcome Back!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:id="@+id/signInWelcom"
+            android:layout_below="@+id/signInBackwardButton"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:id="@+id/regEditUserName"
+            android:background="@drawable/edit_text_underline"
+            android:cursorVisible="false"
+            android:textColor="#FFFFFF"
+            android:layout_height="25dp"
+            android:layout_below="@+id/signInUserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/forward_button_selector"
+            android:id="@+id/signInForwardButton"
+            android:layout_width="40dp" />
+
+        <TextView
+            android:text="PASSWORD*"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:id="@+id/signInPassword"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/regEditUserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editPassword"
+            android:background="@drawable/edit_text_underline"
+            android:textColor="#FFFFFF"
+            android:layout_height="25dp"
+            android:layout_below="@+id/signInPassword"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Not yet registered? Click"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:id="@+id/signInRegText" />
+
+        <TextView
+            android:text=" here"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:background="@drawable/text_selector"
+            android:textColor="#FF0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/signInRegText"
+            android:layout_toRightOf="@+id/signInRegText"
+            android:layout_toEndOf="@+id/signInRegText"
+            android:id="@+id/signInRegLink"
+            android:gravity="center"
+            android:paddingRight="1dp" />
+
+    </RelativeLayout>
+</layout>
+
